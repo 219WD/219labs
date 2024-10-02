@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      219Labs | Agencia de Diseño y Desarrollo Web | @CanepaDev
+    </title>
+    <meta name="author" content="Codegrid" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/loader.css" />
+
+    <!-- menu -->
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <!-- sections -->
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/promo.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/prices-hero.css" />
+    <link rel="stylesheet" href="./css/prices.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <!-- icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!-- spline  -->
+    <script
+      type="module"
+      src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"
+    ></script>
+  </head>
+  <body>
+    <!-- loader -->
+    <div class="loader">
+      <div class="loader-copy">
+        <p id="loader-copy-1">Cargando en progreso</p>
+
+        <p id="loader-copy-2">Unos segundos por favor</p>
+
+        <p id="loader-copy-3">Casi listo</p>
+      </div>
+      <div class="progress-bar"></div>
+    </div>
+
+    <!-- navbar -->
+    <nav>
+      <div class="logo">
+        <a href="#hero"><img src="./assets/site-logo.png" alt="" /></a>
+      </div>
+
+      <div class="clock">
+        <p>
+          ON
+          <span id="currentTime"></span>
+        </p>
+      </div>
+
+      <div class="ctas">
+        <div class="contact">
+          <div class="contact-icon">
+            <ion-icon name="ellipse-sharp"></ion-icon>
+          </div>
+          <a href="https://presentationcard2.vercel.app/" target="_blank">Hablemos</a>
+        </div>
+
+        <div class="menu">
+          <div class="menu-icon">
+            <ion-icon name="close-sharp"></ion-icon>
+          </div>
+          <p>Menu</p>
+        </div>
+      </div>
+    </nav>
+
+    <!-- menu links -->
+    <div class="menu-container">
+      <div class="whitespace"></div>
+      <div class="whitespace"></div>
+      <div class="menu-items">
+        <a href="#about" class="menu-item">
+          <span>01</span>
+          <span>Quiénes somos</span>
+        </a>
+        <a href="#services" class="menu-item">
+          <span>02</span>
+          <span>Tecnologías</span>
+        </a>
+        <a href="#cases" class="menu-item">
+          <span>03</span>
+          <span>Casos</span>
+        </a>
+        <a href="#prices" class="menu-item">
+          <span>04</span>
+          <span>Precios & Proceso</span>
+        </a>
+        <a href="#contact" class="menu-item">
+          <span>05</span>
+          <span>Contacto</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- website content -->
+    <div class="container">
+      <!-- hero section -->
+      <section class="hero" id="hero">
+        <div class="hero-img"><img src="./assets/grad.png" alt="" /></div>
+
+        <div class="hero-header">
+          <div class="hero-col">
+            <h1>219LABS</h1>
+          </div>
+          <div class="hero-col">
+            <p id="site-intro">
+              Desde 2020, 219LABS ha estado a la vanguardia de la innovación
+              digital, creando productos web3 de última generación y brindando
+              soporte de diseño excepcional tanto para startups como para
+              grandes corporaciones.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- about -->
+      <section class="about" id="about">
+        <div class="about-header">
+          <div class="about-col">
+            <p class="callout">¿Cómo podemos ayudar?</p>
+          </div>
+          <div class="about-col">
+            <h2>
+              Entregamos soluciones digitales modernas y soporte de diseño de
+              primer nivel a startups en crecimiento y grandes corporaciones desde
+              2020.
+              <span style="opacity: 0">.</span>
+            </h2>
+
+            <p class="about-copy">
+              Nuestro equipo de expertos se especializa en crear productos
+              digitales de última generación y proporcionar soporte de diseño de
+              alta calidad.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- services -->
+      <section class="services" id="services">
+        <div class="services-col">
+          <p class="callout">Trabajamos con</p>
+        </div>
+        <div class="services-col">
+          <div class="services-row">
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="finger-print-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Autenticación</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="layers-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Diseño</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="folder-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Almacenamiento</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="shield-checkmark-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Seguridad</p>
+              </div>
+            </div>
+          </div>
+          <div class="services-row">
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="logo-javascript"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Desarrollo</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="crop-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Edición</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="cloud-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Nube</p>
+              </div>
+            </div>
+            <div class="service-item">
+              <div class="service-icon">
+                <ion-icon name="cube-sharp"></ion-icon>
+              </div>
+              <div class="service-title">
+                <p>Blockchain</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- promo  -->
+      <section class="promo" id="cases">
+        <div class="promo-bg">
+          <img src="./assets/grad.png" alt="" />
+        </div>
+        <div class="promo-header">
+          <h2>Mira</h2>
+          <h2>Nuestros mejores</h2>
+          <h1>Diseños</h1>
+        </div>
+      </section>
+
+      <!-- projects -->
+      <section class="sticky-cards">
+        <section class="projecr-hero pinned"></section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>Muebleria</h3>
+                <p>01 - 01</p>
+              </div>
+
+              <p>
+                Muebleria es una empresa de muebles de diseñador,
+                nuestro trabajo fue desarrollar una interfaz moderna
+                y única para mostrar de la manera mas profesional
+                sus creaciones.
+              </p>
+
+              <div class="project-cta">
+                <p>Visita su sitio</p>
+                <div class="project-cta-row">
+                  <div class="cta"><span>Pagina</span></div>
+                  <div class="cta"><span>Instagram</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-1.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>Mental Peace</h3>
+                <p>01 - 02</p>
+              </div>
+              <p>
+                Mental Peace es una agencia de marketing especializada
+                en profesionales medicos, nuestro trabajo fue desarrollar
+                una interfaz sobria y totalmente informativa 
+                acerca de los servicios que brinda la empresa y su historia.
+              </p>
+
+              <div class="project-cta">
+                <p>Visita su sitio</p>
+                <div class="project-cta-row">
+                  <div class="cta"><span>Pagina</span></div>
+                  <div class="cta"><span>Instagram</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-2.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>MR</h3>
+                <p>01 - 03</p>
+              </div>
+              <p>
+                MR es una empresa de asesorias contables integral,
+                nuestro trabajo fue desarrollar una interfaz moderna y minimalista
+                para mostrar sus servicios e historia de la empresa.
+              </p>
+
+              <div class="project-cta">
+                <p>Visita su sitio</p>
+                <div class="project-cta-row">
+                  <div class="cta"><span>Pagina</span></div>
+                  <div class="cta"><span>Instagram</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-3.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>NT Estetica</h3>
+                <p>01 - 04</p>
+              </div>
+              <p>
+                NT es una clinica especializa en estetica, nuestro trabajo
+                fue desarrollar una interfaz sencilla y sofisticada para ofrecer
+                los servicios promocionados de la empresa.
+              </p>
+
+              <div class="project-cta">
+                <p>Visita su sitio</p>
+                <div class="project-cta-row">
+                  <div class="cta"><span>Pagina</span></div>
+                  <div class="cta"><span>Instagram</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-4.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card pinned">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>Stock Manager</h3>
+                <p>01 - 05</p>
+              </div>
+              <p>
+                Stock Manager es un software diseñado para administrar
+                y llevar un control minucioso del stock de la empresa,
+                controlando la cantidad de productos, sus precios
+                y alertas sobre la proximidad al vencimiento de estos mismos.
+              </p>
+
+              <div class="project-cta">
+                <p>Visita su sitio</p>
+                <div class="project-cta-row">
+                  <div class="cta"><span>Pagina</span></div>
+                  <div class="cta"><span>Instagram</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-5.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="card scroll">
+          <div class="project">
+            <div class="project-copy">
+              <div class="project-header">
+                <h3>Sur Salud</h3>
+                <p>01 - 06</p>
+              </div>
+              <p>
+                Sur Salud es una clinica medica con diversos especialistas,
+                nuestro trabajo fue desarrollar un software completo para el manejo
+                de los pacientes, historiales clinicos, antecedentes medicos,
+                manejo de turnos, sala de espera y consultorio con historial de visitas
+                y analiticas.
+              </p>
+
+              <div class="project-cta">
+                <p>Visita su sitio</p>
+                <div class="project-cta-row">
+                  <div class="cta"><span>Pagina</span></div>
+                  <div class="cta"><span>Instagram</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-img">
+              <img src="./assets/project-6.jpg" alt="" />
+            </div>
+          </div>
+        </section>
+
+        <section class="footer"></section>
+      </section>
+
+      <!-- prices  -->
+      <section class="prices-hero" id="prices">
+        <div class="prices-bg">
+          <img src="./assets/grad.png" alt="" />
+        </div>
+        <div class="prices-hero-header">
+          <h2>Precios &</h2>
+          <h2>Proceso</h2>
+        </div>
+      </section>
+
+      <!-- prices -->
+      <section class="prices">
+        <div class="prices-header">
+          <div class="prices-col"></div>
+          <div class="prices-col">
+            <h2>
+              Opte por nuestro modelo de suscripción, donde paga una tarifa mensual por acceso continuo a nuestro equipo de expertos.
+              <span style="opacity: 0">.</span>
+            </h2>
+
+            <p class="prices-copy">
+              Este modelo es ideal para proyectos en curso que requieren actualizaciones y soporte constantes.
+            </p>
+          </div>
+        </div>
+
+        <div class="prices-cta">
+          <a href="#">
+            <h1>Suscripciones desde</h1>
+            <h1>USD 500</h1>
+          </a>
+        </div>
+      </section>
+
+      <!-- features -->
+      <section class="features">
+        <div class="features-col">
+          <div class="features-row">
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-1.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>ACTUALIZACIONES SEMANALES TRANSPARENTES</h2>
+                <p>
+                  Nuestros proyectos se gestionan en sprints. Colaboramos contigo
+                  para definir objetivos, dividir el proceso de desarrollo en
+                  tareas manejables y entregar informes de progreso semanales.
+                </p>
+              </div>
+            </div>
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-2.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>INFORMACIÓN SEMANAL DETALLADA</h2>
+                <p>
+                  Al ejecutar nuestros proyectos en sprints, garantizamos claridad y
+                  enfoque. Juntos, describimos las tareas necesarias y le brindamos
+                  informes semanales detallados sobre nuestro progreso.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="features-row">
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-3.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>PROGRESO SEMANAL CONSTANTE</h2>
+                <p>
+                  Adoptamos un enfoque basado en sprints para todos los proyectos. Esto
+                  implica establecer objetivos claros, dividir el desarrollo en
+                  tareas específicas y entregar actualizaciones semanales constantes.
+                </p>
+              </div>
+            </div>
+            <div class="features-item">
+              <div class="features-icon">
+                <img src="./assets/feature-4.png" alt="" />
+              </div>
+              <div class="features-title">
+                <h2>SEGUIMIENTO DEL PROGRESO SEMANAL</h2>
+                <p>
+                  Nuestra metodología de sprint garantiza que definamos las tareas
+                  de manera colaborativa, segmentemos todo el proceso de desarrollo y
+                  proporcionemos informes de progreso semanales transparentes.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer  -->
+      <footer id="contact">
+        <div class="footer-bg">
+          <img src="./assets/grad.png" alt="" />
+        </div>
+        <div class="footer-header">
+          <h1>Let's</h1>
+          <h1>Talk</h1>
+        </div>
+        <div class="footer-sub-header">
+          <h2>Completa el formulario</h2>
+          <h2>y</h2>
+          <h2>Ponte en contacto</h2>
+        </div>
+
+        <div class="footer-ctas">
+          <div class="footer-ctas-col">
+            <div class="footer-cta-icon">
+              <a href="https://www.instagram.com/canepadev/" target="_blank">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </div>
+            <div class="footer-cta-icon">
+              <a href="https://www.youtube.com/@CanepaDev" target="_blank">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </div>
+          </div>
+          <div class="footer-ctas-col">
+            <div class="footer-cta-icon">
+              <a href="#hero"><ion-icon name="arrow-up-sharp"></ion-icon></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-form">
+          <div class="form-col">
+            <div class="form-row">
+              <input type="text" placeholder="Tu nombre" />
+              <input type="text" placeholder="Nombre de tu empresa" />
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Email" />
+            </div>
+            <div class="form-row">
+              <input type="text" placeholder="Presupuesto estimado" />
+            </div>
+            <div class="form-row">
+              <textarea name="" rows="4" placeholder="Mensaje" id=""></textarea>
+            </div>
+          </div>
+
+          <div class="form-col">
+            <div class="submit-btn">
+              <h3>Enviar</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>219Labs</p>
+          <p>CanepaDev</p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+    <script src="./js/loader.js"></script>
+    <script src="./js/lenis.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/about.js"></script>
+    <script src="./js/projects.js"></script>
+    <script src="./js/prices.js"></script>
+
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
