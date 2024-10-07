@@ -118,11 +118,15 @@ footer {
   border-radius: 8px;
 }
 
-.submit-btn h3 {
+.submit-btn #submit-button {
   font-family: var(--font-secondary);
   font-size: 3vw;
   color: var(--color-text);
   text-transform: uppercase;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .form-row {
