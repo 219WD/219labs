@@ -78,4 +78,8 @@
     top: -25%;
     transform: scale(0.75);
   }
+  
+  .features-icon img {
+    width: 600px;
+  }
 }

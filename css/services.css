@@ -54,5 +54,19 @@
 
   .services-row {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas para mostrar dos elementos */
+    gap: 0.5em;
+  }
+
+  .service-item {
+    width: 100%;
+  }
+
+  .service-title p {
+    font-size: 1.2rem;
+  }
+  .service-icon {
+    font-size: 40px;
   }
 }

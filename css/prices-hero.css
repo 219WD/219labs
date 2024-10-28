@@ -44,11 +44,12 @@
     height: 70vh;
   }
 
-  .prices-hero h2 {
-    font-size: 4vw;
+  .prices-hero .prices-hero-header h2 {
+    font-size: 3rem;
+    text-align: center;
   }
 
-  .prices-hero h1 {
-    font-size: 14vw;
+  .prices-hero .prices-hero-header h1 {
+    font-size: 4rem;
   }
 }
